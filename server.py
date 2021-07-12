@@ -2,11 +2,11 @@ from flask import Flask, request, jsonify
 from flask import render_template
 from flask_cors import CORS 
 from flask import request
-import util 
+from Helper import util 
 
 import pickle
 # from model_files
-app = Flask(__name__,template_folder='../templates',static_folder='../static')
+app = Flask(__name__)
 CORS(app)
 @app.route('/get_location_names',methods=['GET'])
 def get_locations_names():
