@@ -7,7 +7,18 @@
   <link rel="stylesheet" href="../static/app.css">
 </head>
 <body>
-<div class="img"></div>
+  <header>
+    <h1>
+      House price prediction using Linear Regression
+    </h1>
+  </header>
+  <aside>
+    BHK:No.of Bedrooms<br>
+    Bath: No. of bathrooms<br>
+    For detailed explaination:
+    <a href="https://github.com/prakx1/laughing-tribble/blob/master/Bengaluru-housing.ipynb">Jupyter Notebook</a>
+  </aside>
+<!-- <div class="img"></div> -->
 <form class="form">
   <h2>Area (Square Feet)</h2>
     <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
@@ -47,7 +58,10 @@
         <option>Rajaji Nagar</option>
   </select>
 </div>
-  <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+  <button id="Estimate"  class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
   <div id="uiEstimatedPrice" class="result">  <h2></h2> </div>
+  <footer> 
+    <a href="https://github.com/prakx1/laughing-tribble/">See other works</a>
+  </footer>
 </body>
 </html>

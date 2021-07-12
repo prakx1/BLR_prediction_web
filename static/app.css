@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+body{
+	background-color: #c8c9c8;
+}
 .switch-field {
 	display: flex;
 	margin-bottom: 36px;
@@ -33,7 +36,7 @@
 }
 
 .switch-field input:checked + label {
-	background-color: #a5dc86;
+	background-color: #777a75;
 	box-shadow: none;
 }
 
@@ -53,6 +56,9 @@
 	margin: 8px auto;
 	padding-left: 16px;
 	z-index: 2;
+}
+header{
+	text-align: center;
 }
 
 h2 {
@@ -88,7 +94,7 @@ h2 {
 }
 
 .submit{
-  background: #a5dc86;
+  background: #d6d6d5;
   width: 76%;
   border: 0;
   margin: 25px 0 10px;
@@ -100,7 +106,7 @@ h2 {
 }
 
 .result{
-		background: #dcd686;
+		background: #838381;
 		width: 76%;
 		border: 0;
 		margin: 25px 0 10px;
@@ -130,4 +136,10 @@ h2 {
 
 body, html {
   height: 100%;
+}
+#Estimate{
+	border: 1px solid;
+}
+#Estimate:active{
+	border: 3px solid;
 }
