@@ -160,6 +160,7 @@ h2 {
 
 body, html {
   height: 100%;
+  width: 100%;
 }
 #Estimate{
 	border: 1px solid;
