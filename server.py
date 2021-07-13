@@ -8,6 +8,9 @@ import pickle
 # from model_files
 app = Flask(__name__)
 CORS(app)
+@app.before_first_request
+def _loadartifcats():
+     util.load_saved_artifacts()
 @app.route('/get_location_names',methods=['GET'])
 def get_locations_names():
     response = jsonify({
@@ -33,8 +36,8 @@ def predict_home_price():
 
 @app.route('/')
 def hell_world():
+ 
     return render_template("app.html")
 if __name__ == "__main__":
     print("Starting Python Flask Server For Home Price Prediction...")
-    util.load_saved_artifacts()
     app.run()
